@@ -15,7 +15,7 @@ const userSchema = new mongoose.Schema({
   password: String,
 });
 
-const User = mongoose.model("User", userSchema);
+export const User = mongoose.model("User", userSchema);
 
 export class UserController {
   async createUser(req: Request, res: Response) {
